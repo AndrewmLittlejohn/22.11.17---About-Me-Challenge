@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding:0;
+  
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    }
+    
+    
+    /* Gives the body element a parent height to compare against */
+    html {
+        height: 100%;
+        width:100%;
+    }
+
+body { background-color: aliceblue;}
+
+header {background: linear-gradient(0.50turn, #5ec2ed, #ebf8e1, #74b1e2);;
+width:100vw;
+position: sticky;
+margin-bottom: 1%;
+}
+
+h1 {font-size: 3em; color:royalblue;
+    padding: 2%;
+}
+ul { margin-right: 2%;
+position: relative;
+margin-bottom: 2%;
+color: navy;
+}
+
+li { display: inline;
+    float: right;
+    margin-right: 2%;
+    color: navy
+}
+/* Li { color: navy } */
+  
+    a { color: navy;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+    a:visited { text-decoration: none; color: navy }
+    a:hover { text-decoration: none; color: navy; }
+    a:focus { text-decoration: none; color:navy; }
+    a:hover, a:active { text-decoration: none; color:navy }
+
+#aboutme { padding-bottom: 5vh;
+     padding-top: 2%;
+    }
+    #aboutme h3 {margin-bottom: 9vh;}
+
+h3 { color: rgb(47, 47, 47);
+       float: left;
+    width: 30%;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+.box { 
+position:absolute;
+margin-bottom: 2px;
+padding-left: 1vw;
+padding-top: 1.5vh;
+left: 1vw;
+bottom: 3vh;
+border: 3px solid #5ec2ed;
+height: 8vh;
+width: 11.5vw;
+font-size: 92%;
+color: navy;
+align-content: center;
+background-color: #ebf8e1;
+}
+
+.flexcontainer {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+}
+
+.works {
+display: flex;
+width: 40%;
+height: 25vh;
+margin: 2%;
+border: 5px solid rgb(100, 100, 230);
+position: relative;
+background-size: 100% 30%;
+background-repeat: no-repeat;
+background-position: bottom;
+ }
+ #one { width: 100%;}
+
+ .works img { position:absolute; bottom:0;
+}
+
+footer {
+    position: sticky;
+
+
+}
+
+@media screen and (max-width:800px) {
+    #aboutme {
+        padding-top: 2%;
+          }
+        h3 { float: none;
+    font-size: 1em;
+    }
+    #aboutme p { font-size: smaller;}
+    #aboutme h3 {margin-bottom: 0vh;}
+    .box {
+    font-size: 110%;
+    width: 80%;
+    
+    }
+    .flexcontainer {
+       /* display: flex;
+       flex-flow: column; */
+        float: none;
+        width: 80%;
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+    .works {
+    width: 80%; height: 20vh;
+}  
+footer h3 { font-size: .9em;}
+footer a { padding-bottom: 5%;}
+} 
+
+@media screen and (min-width:1236px) {
+    .flexcontainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 75%;
+        float: right;
+        }
+/* 
+    #article h3 { float: left;
+        margin-left: 2%;
+               } */
+}
